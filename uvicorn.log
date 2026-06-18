@@ -1,0 +1,403 @@
+INFO:     Started server process [3908]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:56735 - "GET /health HTTP/1.1" 200 OK
+2026-06-18 03:24:28,652 [INFO] botocore.credentials: Found credentials in shared credentials file: ~/.aws/credentials
+INFO:     127.0.0.1:56737 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56749 - "GET /api/v1/video-feed?video_url=https://www.youtube.com/watch?v=aqz-KE-bpKQ&stream_id=ca927278-4df4-4c8f-9f16-a900ae2b88af&frame_skip=30&analysis_interval=1 HTTP/1.1" 200 OK
+2026-06-18 03:24:41,854 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:24:42,096 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781763881&ei=yTozaoPrLevni9oPhpqf6QI&ip=176.239.195.116&id=o-AIPL5IP1zcB8TxDQCGFEpAQsQnTmPx53pHx1H4vRyUtU&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=352&met=1781742281%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEVtQVqUiruPkCHqHY-HXA_F4cGrReqCEDkPCMKDIDm6OW655qXPNzF45r76CTmue-rxGdCAW8o2&spc=SQ-umq4jyXZzkgP1WACUudLajXo-nenM6tl1a0zA76iLSb8PJmih&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565115%2C51565682%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAI_yc0vpi3YRgROCKzZrdoddQXZXQp0764vDy_Te9T05AiBNf6oci_F4n-rAM396nOKOFL4s6JEUuvGF-YSnidJQMg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgC5Sp7Im-HkJgPHIMsFaUlvr5b8uo1cuCnhSnFk7cirQCIE-MqpFrkbAdhIL-8-Hxa-zQsxXGJZxGLkD2U5dm8eLu
+2026-06-18 03:24:42,096 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781763881&ei=yTozaoPrLevni9oPhpqf6QI&ip=176.239.195.116&id=o-AIPL5IP1zcB8TxDQCGFEpAQsQnTmPx53pHx1H4vRyUtU&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=352&met=1781742281%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEVtQVqUiruPkCHqHY-HXA_F4cGrReqCEDkPCMKDIDm6OW655qXPNzF45r76CTmue-rxGdCAW8o2&spc=SQ-umq4jyXZzkgP1WACUudLajXo-nenM6tl1a0zA76iLSb8PJmih&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565115%2C51565682%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAI_yc0vpi3YRgROCKzZrdoddQXZXQp0764vDy_Te9T05AiBNf6oci_F4n-rAM396nOKOFL4s6JEUuvGF-YSnidJQMg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgC5Sp7Im-HkJgPHIMsFaUlvr5b8uo1cuCnhSnFk7cirQCIE-MqpFrkbAdhIL-8-Hxa-zQsxXGJZxGLkD2U5dm8eLu
+2026-06-18 03:24:43,804 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:24:44,877 [INFO] app.api.v1.stream: video-feed: frame #1 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:24:45,896 [INFO] app.api.v1.stream: video-feed: frame #2 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:24:46,928 [INFO] app.api.v1.stream: video-feed: frame #3 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:24:47,864 [INFO] app.api.v1.stream: video-feed: frame #4 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:24:49,184 [INFO] app.api.v1.stream: video-feed: frame #5 analiz edildi, 5 etiket bulundu.
+2026-06-18 03:24:50,465 [INFO] app.api.v1.stream: video-feed: frame #6 analiz edildi, 5 etiket bulundu.
+2026-06-18 03:24:51,889 [INFO] app.api.v1.stream: video-feed: frame #7 analiz edildi, 6 etiket bulundu.
+2026-06-18 03:24:53,544 [INFO] app.api.v1.stream: video-feed: frame #8 analiz edildi, 8 etiket bulundu.
+2026-06-18 03:24:55,618 [INFO] app.api.v1.stream: video-feed: frame #9 analiz edildi, 8 etiket bulundu.
+2026-06-18 03:24:58,597 [INFO] app.api.v1.stream: video-feed: frame #10 analiz edildi, 10 etiket bulundu.
+2026-06-18 03:25:01,659 [INFO] app.api.v1.stream: video-feed: frame #11 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56756 - "GET /api/v1/analysis/ca927278-4df4-4c8f-9f16-a900ae2b88af/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56802 - "GET /ui/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56815 - "GET /ui/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56822 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56822 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Daqz-KE-bpKQ&stream_id=ca69b535-1abb-4e8c-bf97-f4a146a7f150&frame_skip=2&analysis_interval=15 HTTP/1.1" 200 OK
+2026-06-18 03:26:28,026 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:26:28,289 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781763987&ei=Mzszaqj8OeLRi9oP28yiwQk&ip=176.239.195.116&id=o-AGr1AgwAMxKwKjZP_CQU6UhgMeBkHAqi6gTlc07yqJCN&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=397&met=1781742387%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1587500&bui=ARmQxEUJ8VG4ZLBXMpJqQ6PZEuQ5WkYK1zPdy3Z1I7wNsj7fjh6J0gnujzYh8bTXNFyzPTL1-qDI4pEP&spc=SQ-umqE0DZVwzjcftemjm6r0dw_xCpSr-M3oZjRR-gmCTaW5c7Vl&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781741847&fvip=2&fexp=51565116%2C51565681%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhANoyxmBlvRZT8HhJUuV9wh__yBKPO4ka3jbImDSXQ0aVAiEA_X6gziadnosJHMdrsBFTTfLexHVtByImn3mb3OOQ-gc%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgRnR8TJrCEvHQWjXNoJz_gjkP2UdmDGC93mngxPbnyMwCIQDdSWLrsp-sVQCJmedY_Db6KvUw5gptgpnpxGZ2101ZRw%3D%3D
+2026-06-18 03:26:28,289 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781763987&ei=Mzszaqj8OeLRi9oP28yiwQk&ip=176.239.195.116&id=o-AGr1AgwAMxKwKjZP_CQU6UhgMeBkHAqi6gTlc07yqJCN&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=397&met=1781742387%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1587500&bui=ARmQxEUJ8VG4ZLBXMpJqQ6PZEuQ5WkYK1zPdy3Z1I7wNsj7fjh6J0gnujzYh8bTXNFyzPTL1-qDI4pEP&spc=SQ-umqE0DZVwzjcftemjm6r0dw_xCpSr-M3oZjRR-gmCTaW5c7Vl&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781741847&fvip=2&fexp=51565116%2C51565681%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhANoyxmBlvRZT8HhJUuV9wh__yBKPO4ka3jbImDSXQ0aVAiEA_X6gziadnosJHMdrsBFTTfLexHVtByImn3mb3OOQ-gc%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgRnR8TJrCEvHQWjXNoJz_gjkP2UdmDGC93mngxPbnyMwCIQDdSWLrsp-sVQCJmedY_Db6KvUw5gptgpnpxGZ2101ZRw%3D%3D
+2026-06-18 03:26:29,931 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/ca69b535-1abb-4e8c-bf97-f4a146a7f150/results HTTP/1.1" 200 OK
+2026-06-18 03:26:30,947 [INFO] app.api.v1.stream: video-feed: frame #15 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:26:31,971 [INFO] app.api.v1.stream: video-feed: frame #30 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/ca69b535-1abb-4e8c-bf97-f4a146a7f150/results HTTP/1.1" 200 OK
+2026-06-18 03:26:32,987 [INFO] app.api.v1.stream: video-feed: frame #45 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:26:33,999 [INFO] app.api.v1.stream: video-feed: frame #60 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:26:35,419 [INFO] app.api.v1.stream: video-feed: frame #75 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/ca69b535-1abb-4e8c-bf97-f4a146a7f150/results HTTP/1.1" 200 OK
+2026-06-18 03:26:36,919 [INFO] app.api.v1.stream: video-feed: frame #90 analiz edildi, 5 etiket bulundu.
+2026-06-18 03:26:38,475 [INFO] app.api.v1.stream: video-feed: frame #105 analiz edildi, 6 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/ca69b535-1abb-4e8c-bf97-f4a146a7f150/results HTTP/1.1" 200 OK
+2026-06-18 03:26:40,239 [INFO] app.api.v1.stream: video-feed: frame #120 analiz edildi, 8 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/ca69b535-1abb-4e8c-bf97-f4a146a7f150/results HTTP/1.1" 200 OK
+2026-06-18 03:26:42,135 [INFO] app.api.v1.stream: video-feed: frame #135 analiz edildi, 8 etiket bulundu.
+2026-06-18 03:26:44,215 [INFO] app.api.v1.stream: video-feed: frame #150 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/ca69b535-1abb-4e8c-bf97-f4a146a7f150/results HTTP/1.1" 200 OK
+2026-06-18 03:26:46,753 [INFO] app.api.v1.stream: video-feed: frame #165 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/ca69b535-1abb-4e8c-bf97-f4a146a7f150/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56839 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56839 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Daqz-KE-bpKQ&stream_id=55275c62-c970-408c-aeb7-8a0223b5bf61&frame_skip=50&analysis_interval=15 HTTP/1.1" 200 OK
+2026-06-18 03:26:49,855 [INFO] app.api.v1.stream: video-feed: frame #180 analiz edildi, 9 etiket bulundu.
+2026-06-18 03:26:51,767 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:26:52,082 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764011&ei=SzszatWdINfT6dsPmo6sqQc&ip=176.239.195.116&id=o-AP0r1x63dtl8mjw70zhWw5RAZaC9yjscG4pW0c7aYfez&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=311&met=1781742411%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pcm2cms=yes&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEUVIjTj89KL-AwxFIvJNrgjb-TZVS2wWEKONai7tlcesbG1DxH6iSHvyknoDLElg14oRGoQ_X39&spc=SQ-umo2KYqJ-juDoqTS9vxu0_WhfMD-wFHm9HtzOkVRrMzN7LDLX&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAJ98iW4cmYw4dvb1MFWEwS83o8S7dBE0IiiLsfsd_YGfAiBxss2YAeyisnJKlKPXR1EEa8kedVY-0eO01_MCY-5FSg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhALYsOHuD6-cs27GoD2iWvKvpL9G01N467jQwdaKc89C2AiBLZrsYVmPzvRXPKY2rYUzW6xzyK_495et1e6ThHkUAVw%3D%3D
+2026-06-18 03:26:52,082 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764011&ei=SzszatWdINfT6dsPmo6sqQc&ip=176.239.195.116&id=o-AP0r1x63dtl8mjw70zhWw5RAZaC9yjscG4pW0c7aYfez&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=311&met=1781742411%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pcm2cms=yes&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEUVIjTj89KL-AwxFIvJNrgjb-TZVS2wWEKONai7tlcesbG1DxH6iSHvyknoDLElg14oRGoQ_X39&spc=SQ-umo2KYqJ-juDoqTS9vxu0_WhfMD-wFHm9HtzOkVRrMzN7LDLX&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAJ98iW4cmYw4dvb1MFWEwS83o8S7dBE0IiiLsfsd_YGfAiBxss2YAeyisnJKlKPXR1EEa8kedVY-0eO01_MCY-5FSg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhALYsOHuD6-cs27GoD2iWvKvpL9G01N467jQwdaKc89C2AiBLZrsYVmPzvRXPKY2rYUzW6xzyK_495et1e6ThHkUAVw%3D%3D
+2026-06-18 03:26:52,997 [INFO] app.api.v1.stream: video-feed: frame #195 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:26:53,206 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:26:55,221 [INFO] app.api.v1.stream: video-feed: frame #210 analiz edildi, 10 etiket bulundu.
+2026-06-18 03:26:55,837 [INFO] app.api.v1.stream: video-feed: frame #15 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:26:57,986 [INFO] app.api.v1.stream: video-feed: frame #30 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:26:59,859 [INFO] app.api.v1.stream: video-feed: frame #45 analiz edildi, 5 etiket bulundu.
+2026-06-18 03:27:01,947 [INFO] app.api.v1.stream: video-feed: frame #60 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:04,475 [INFO] app.api.v1.stream: video-feed: frame #75 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:06,009 [INFO] app.api.v1.stream: video-feed: frame #90 analiz edildi, 3 etiket bulundu.
+2026-06-18 03:27:07,849 [INFO] app.api.v1.stream: video-feed: frame #105 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:09,497 [INFO] app.api.v1.stream: video-feed: frame #120 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:11,293 [INFO] app.api.v1.stream: video-feed: frame #135 analiz edildi, 6 etiket bulundu.
+2026-06-18 03:27:13,377 [INFO] app.api.v1.stream: video-feed: frame #150 analiz edildi, 8 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:15,425 [INFO] app.api.v1.stream: video-feed: frame #165 analiz edildi, 8 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:17,385 [INFO] app.api.v1.stream: video-feed: frame #180 analiz edildi, 5 etiket bulundu.
+2026-06-18 03:27:19,585 [INFO] app.api.v1.stream: video-feed: frame #195 analiz edildi, 9 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:21,317 [INFO] app.api.v1.stream: video-feed: frame #210 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:23,409 [INFO] app.api.v1.stream: video-feed: frame #225 analiz edildi, 10 etiket bulundu.
+2026-06-18 03:27:24,785 [INFO] app.api.v1.stream: video-feed: frame #240 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:27,073 [INFO] app.api.v1.stream: video-feed: frame #255 analiz edildi, 10 etiket bulundu.
+2026-06-18 03:27:29,997 [INFO] app.api.v1.stream: video-feed: frame #270 analiz edildi, 9 etiket bulundu.
+2026-06-18 03:27:30,295 [INFO] app.utils.video_helper: Video akisi sonlandi (toplam 420 frame islendi): https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781763987&ei=Mzszaqj8OeLRi9oP28yiwQk&ip=176.239.195.116&id=o-AGr1AgwAMxKwKjZP_CQU6UhgMeBkHAqi6gTlc07yqJCN&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=397&met=1781742387%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1587500&bui=ARmQxEUJ8VG4ZLBXMpJqQ6PZEuQ5WkYK1zPdy3Z1I7wNsj7fjh6J0gnujzYh8bTXNFyzPTL1-qDI4pEP&spc=SQ-umqE0DZVwzjcftemjm6r0dw_xCpSr-M3oZjRR-gmCTaW5c7Vl&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781741847&fvip=2&fexp=51565116%2C51565681%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhANoyxmBlvRZT8HhJUuV9wh__yBKPO4ka3jbImDSXQ0aVAiEA_X6gziadnosJHMdrsBFTTfLexHVtByImn3mb3OOQ-gc%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgRnR8TJrCEvHQWjXNoJz_gjkP2UdmDGC93mngxPbnyMwCIQDdSWLrsp-sVQCJmedY_Db6KvUw5gptgpnpxGZ2101ZRw%3D%3D
+2026-06-18 03:27:30,296 [INFO] app.api.v1.stream: video-feed akisi sonlandi: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:27:30,313 [INFO] app.utils.video_helper: Video akisi sonlandi (toplam 330 frame islendi): https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781763881&ei=yTozaoPrLevni9oPhpqf6QI&ip=176.239.195.116&id=o-AIPL5IP1zcB8TxDQCGFEpAQsQnTmPx53pHx1H4vRyUtU&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=352&met=1781742281%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEVtQVqUiruPkCHqHY-HXA_F4cGrReqCEDkPCMKDIDm6OW655qXPNzF45r76CTmue-rxGdCAW8o2&spc=SQ-umq4jyXZzkgP1WACUudLajXo-nenM6tl1a0zA76iLSb8PJmih&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565115%2C51565682%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAI_yc0vpi3YRgROCKzZrdoddQXZXQp0764vDy_Te9T05AiBNf6oci_F4n-rAM396nOKOFL4s6JEUuvGF-YSnidJQMg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgC5Sp7Im-HkJgPHIMsFaUlvr5b8uo1cuCnhSnFk7cirQCIE-MqpFrkbAdhIL-8-Hxa-zQsxXGJZxGLkD2U5dm8eLu
+2026-06-18 03:27:30,400 [INFO] app.api.v1.stream: video-feed akisi sonlandi: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:31,961 [INFO] app.api.v1.stream: video-feed: frame #285 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:33,725 [INFO] app.api.v1.stream: video-feed: frame #300 analiz edildi, 4 etiket bulundu.
+2026-06-18 03:27:34,825 [INFO] app.api.v1.stream: video-feed: frame #315 analiz edildi, 0 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:36,821 [INFO] app.api.v1.stream: video-feed: frame #330 analiz edildi, 3 etiket bulundu.
+2026-06-18 03:27:38,329 [INFO] app.api.v1.stream: video-feed: frame #345 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:40,139 [INFO] app.api.v1.stream: video-feed: frame #360 analiz edildi, 3 etiket bulundu.
+INFO:     127.0.0.1:56834 - "GET /api/v1/analysis/55275c62-c970-408c-aeb7-8a0223b5bf61/results HTTP/1.1" 200 OK
+2026-06-18 03:27:41,467 [INFO] app.api.v1.stream: video-feed: frame #375 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:27:41,573 [INFO] app.utils.video_helper: Video kaynagi sonuna ulasildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764011&ei=SzszatWdINfT6dsPmo6sqQc&ip=176.239.195.116&id=o-AP0r1x63dtl8mjw70zhWw5RAZaC9yjscG4pW0c7aYfez&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=311&met=1781742411%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pcm2cms=yes&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEUVIjTj89KL-AwxFIvJNrgjb-TZVS2wWEKONai7tlcesbG1DxH6iSHvyknoDLElg14oRGoQ_X39&spc=SQ-umo2KYqJ-juDoqTS9vxu0_WhfMD-wFHm9HtzOkVRrMzN7LDLX&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAJ98iW4cmYw4dvb1MFWEwS83o8S7dBE0IiiLsfsd_YGfAiBxss2YAeyisnJKlKPXR1EEa8kedVY-0eO01_MCY-5FSg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhALYsOHuD6-cs27GoD2iWvKvpL9G01N467jQwdaKc89C2AiBLZrsYVmPzvRXPKY2rYUzW6xzyK_495et1e6ThHkUAVw%3D%3D
+2026-06-18 03:27:41,577 [INFO] app.utils.video_helper: Video akisi sonlandi (toplam 19037 frame islendi): https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764011&ei=SzszatWdINfT6dsPmo6sqQc&ip=176.239.195.116&id=o-AP0r1x63dtl8mjw70zhWw5RAZaC9yjscG4pW0c7aYfez&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=311&met=1781742411%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pcm2cms=yes&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEUVIjTj89KL-AwxFIvJNrgjb-TZVS2wWEKONai7tlcesbG1DxH6iSHvyknoDLElg14oRGoQ_X39&spc=SQ-umo2KYqJ-juDoqTS9vxu0_WhfMD-wFHm9HtzOkVRrMzN7LDLX&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAJ98iW4cmYw4dvb1MFWEwS83o8S7dBE0IiiLsfsd_YGfAiBxss2YAeyisnJKlKPXR1EEa8kedVY-0eO01_MCY-5FSg%3D%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhALYsOHuD6-cs27GoD2iWvKvpL9G01N467jQwdaKc89C2AiBLZrsYVmPzvRXPKY2rYUzW6xzyK_495et1e6ThHkUAVw%3D%3D
+2026-06-18 03:27:41,663 [INFO] app.api.v1.stream: video-feed akisi sonlandi: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+INFO:     127.0.0.1:56862 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56862 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Daqz-KE-bpKQ&stream_id=115d38ce-0695-4fb4-bc93-faed366100be&frame_skip=1&analysis_interval=1 HTTP/1.1" 200 OK
+2026-06-18 03:27:51,827 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:27:52,073 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764071&ei=hzszaoqJLJ3Pi9oPy-aAkA0&ip=176.239.195.116&id=o-AMGEi_pKjekKCmAFTBvWFVF-bo6DLitf53yhie1HzS_g&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=308&met=1781742471%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEXDF_kJ8U2hC5yHYEMoxQrqljlKvsNNDy95Nbm5Ba09yWMNgLBQtKxpXgXX2O1ewFWnTxes4et_&spc=SQ-umjJ0aUHR6JHoLE9RhNg-we-T_6oz0PiwwD9unhMPIlFm1XLC&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRAIga_mzzbiOvLP_c6IUbjSit5JZa8oAZscYN961ryo97gkCIFthwTsGmI0KIppFGtVZNGlFwB08uoygPI1YZBn-aWUY&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAKQgKP_79khDpZnn7w1Z7T22QjdMfYK8uUA8XAYOPhaAAiAcsv_haV9US2JemP8ChFRJdrtoPAPe4UJ7NK50YaquDQ%3D%3D
+2026-06-18 03:27:52,073 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764071&ei=hzszaoqJLJ3Pi9oPy-aAkA0&ip=176.239.195.116&id=o-AMGEi_pKjekKCmAFTBvWFVF-bo6DLitf53yhie1HzS_g&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=308&met=1781742471%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEXDF_kJ8U2hC5yHYEMoxQrqljlKvsNNDy95Nbm5Ba09yWMNgLBQtKxpXgXX2O1ewFWnTxes4et_&spc=SQ-umjJ0aUHR6JHoLE9RhNg-we-T_6oz0PiwwD9unhMPIlFm1XLC&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRAIga_mzzbiOvLP_c6IUbjSit5JZa8oAZscYN961ryo97gkCIFthwTsGmI0KIppFGtVZNGlFwB08uoygPI1YZBn-aWUY&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAKQgKP_79khDpZnn7w1Z7T22QjdMfYK8uUA8XAYOPhaAAiAcsv_haV9US2JemP8ChFRJdrtoPAPe4UJ7NK50YaquDQ%3D%3D
+2026-06-18 03:27:53,169 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56863 - "GET /api/v1/analysis/115d38ce-0695-4fb4-bc93-faed366100be/results HTTP/1.1" 200 OK
+2026-06-18 03:27:54,129 [INFO] app.api.v1.stream: video-feed: frame #1 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:27:55,077 [INFO] app.api.v1.stream: video-feed: frame #2 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:27:55,993 [INFO] app.api.v1.stream: video-feed: frame #3 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56863 - "GET /api/v1/analysis/115d38ce-0695-4fb4-bc93-faed366100be/results HTTP/1.1" 200 OK
+2026-06-18 03:27:56,969 [INFO] app.api.v1.stream: video-feed: frame #4 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:27:57,849 [INFO] app.api.v1.stream: video-feed: frame #5 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:27:58,825 [INFO] app.api.v1.stream: video-feed: frame #6 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:27:59,797 [INFO] app.api.v1.stream: video-feed: frame #7 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56863 - "GET /api/v1/analysis/115d38ce-0695-4fb4-bc93-faed366100be/results HTTP/1.1" 200 OK
+2026-06-18 03:28:00,745 [INFO] app.api.v1.stream: video-feed: frame #8 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:01,657 [INFO] app.api.v1.stream: video-feed: frame #9 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:02,665 [INFO] app.api.v1.stream: video-feed: frame #10 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56863 - "GET /api/v1/analysis/115d38ce-0695-4fb4-bc93-faed366100be/results HTTP/1.1" 200 OK
+2026-06-18 03:28:03,689 [INFO] app.api.v1.stream: video-feed: frame #11 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56863 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56863 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Daqz-KE-bpKQ&stream_id=64b73277-f48f-4055-b2cf-209c60ae7291&frame_skip=2&analysis_interval=1 HTTP/1.1" 200 OK
+2026-06-18 03:28:04,585 [INFO] app.api.v1.stream: video-feed: frame #12 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:05,210 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:28:05,507 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764085&ei=lTszaoHkBrTN6dsPkMSTkQg&ip=176.239.195.116&id=o-AAjiTFvPmKNFCvJm4N11_GNVDMNth-Q_Ntj3GogAzoJD&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=436&met=1781742485%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47znel&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEUt-j8Ild0FKBdvobAWBabYWbSvzYnRZYp5rqL4d3k5OcT3iQmY70qyisEEVhRZOuhyXVhkk9Y5&spc=SQ-umhxqAgKIC2yM87iV8VAWy6WLpm_1dxL80iWHhkMHKlb_dY87&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=3&fexp=51565115%2C51565682%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRAIgEeR15D6uEkz2ubTSxbWvfUynQIZg3HrxM-n0XHdqcdMCIFfE2IngO3nZt5k8ky91lAfZNRP1zv1ZarO_EFILx1gT&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgHX-MUtzWlA2xD3uz_VetExRwCrKelfWZZYNcHHR5gZICIQDxmpZrajUMTc5OhYGWgmaIDHH4cBWpAXCo5cjncbUzww%3D%3D
+2026-06-18 03:28:05,508 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764085&ei=lTszaoHkBrTN6dsPkMSTkQg&ip=176.239.195.116&id=o-AAjiTFvPmKNFCvJm4N11_GNVDMNth-Q_Ntj3GogAzoJD&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=436&met=1781742485%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47znel&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEUt-j8Ild0FKBdvobAWBabYWbSvzYnRZYp5rqL4d3k5OcT3iQmY70qyisEEVhRZOuhyXVhkk9Y5&spc=SQ-umhxqAgKIC2yM87iV8VAWy6WLpm_1dxL80iWHhkMHKlb_dY87&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=3&fexp=51565115%2C51565682%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRAIgEeR15D6uEkz2ubTSxbWvfUynQIZg3HrxM-n0XHdqcdMCIFfE2IngO3nZt5k8ky91lAfZNRP1zv1ZarO_EFILx1gT&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgHX-MUtzWlA2xD3uz_VetExRwCrKelfWZZYNcHHR5gZICIQDxmpZrajUMTc5OhYGWgmaIDHH4cBWpAXCo5cjncbUzww%3D%3D
+2026-06-18 03:28:05,594 [INFO] app.api.v1.stream: video-feed: frame #13 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:06,690 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:07,249 [INFO] app.api.v1.stream: video-feed: frame #14 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:07,785 [INFO] app.api.v1.stream: video-feed: frame #1 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:08,261 [INFO] app.api.v1.stream: video-feed: frame #15 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:08,745 [INFO] app.api.v1.stream: video-feed: frame #2 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:09,809 [INFO] app.api.v1.stream: video-feed: frame #3 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:10,865 [INFO] app.api.v1.stream: video-feed: frame #4 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:11,945 [INFO] app.api.v1.stream: video-feed: frame #5 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:12,865 [INFO] app.api.v1.stream: video-feed: frame #6 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:13,781 [INFO] app.api.v1.stream: video-feed: frame #7 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:14,817 [INFO] app.api.v1.stream: video-feed: frame #8 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:15,809 [INFO] app.api.v1.stream: video-feed: frame #9 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:16,729 [INFO] app.api.v1.stream: video-feed: frame #10 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:17,665 [INFO] app.api.v1.stream: video-feed: frame #11 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:18,653 [INFO] app.api.v1.stream: video-feed: frame #12 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:19,689 [INFO] app.api.v1.stream: video-feed: frame #13 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:20,757 [INFO] app.api.v1.stream: video-feed: frame #14 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:21,905 [INFO] app.api.v1.stream: video-feed: frame #15 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:22,873 [INFO] app.api.v1.stream: video-feed: frame #16 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:23,853 [INFO] app.api.v1.stream: video-feed: frame #17 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:24,769 [INFO] app.api.v1.stream: video-feed: frame #18 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:25,825 [INFO] app.api.v1.stream: video-feed: frame #19 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:26,813 [INFO] app.api.v1.stream: video-feed: frame #20 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:27,861 [INFO] app.api.v1.stream: video-feed: frame #21 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:29,221 [INFO] app.api.v1.stream: video-feed: frame #22 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:30,329 [INFO] app.api.v1.stream: video-feed: frame #23 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:31,365 [INFO] app.api.v1.stream: video-feed: frame #24 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:32,349 [INFO] app.api.v1.stream: video-feed: frame #25 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:33,357 [INFO] app.api.v1.stream: video-feed: frame #26 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:34,365 [INFO] app.api.v1.stream: video-feed: frame #27 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:35,386 [INFO] app.api.v1.stream: video-feed: frame #28 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:36,473 [INFO] app.api.v1.stream: video-feed: frame #29 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:37,537 [INFO] app.api.v1.stream: video-feed: frame #30 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:38,569 [INFO] app.api.v1.stream: video-feed: frame #31 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:39,621 [INFO] app.api.v1.stream: video-feed: frame #32 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:40,632 [INFO] app.api.v1.stream: video-feed: frame #33 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:41,833 [INFO] app.api.v1.stream: video-feed: frame #34 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:43,010 [INFO] app.api.v1.stream: video-feed: frame #35 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:44,050 [INFO] app.api.v1.stream: video-feed: frame #36 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:45,118 [INFO] app.api.v1.stream: video-feed: frame #37 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:46,149 [INFO] app.api.v1.stream: video-feed: frame #38 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:47,329 [INFO] app.api.v1.stream: video-feed: frame #39 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:48,333 [INFO] app.api.v1.stream: video-feed: frame #40 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:49,361 [INFO] app.api.v1.stream: video-feed: frame #41 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:50,353 [INFO] app.api.v1.stream: video-feed: frame #42 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:51,361 [INFO] app.api.v1.stream: video-feed: frame #43 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:52,389 [INFO] app.api.v1.stream: video-feed: frame #44 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:53,353 [INFO] app.api.v1.stream: video-feed: frame #45 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:54,456 [INFO] app.api.v1.stream: video-feed: frame #46 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "GET /api/v1/analysis/64b73277-f48f-4055-b2cf-209c60ae7291/results HTTP/1.1" 200 OK
+2026-06-18 03:28:55,532 [INFO] app.api.v1.stream: video-feed: frame #47 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:56,592 [INFO] app.api.v1.stream: video-feed: frame #48 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56870 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56870 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Daqz-KE-bpKQ&stream_id=3f972e21-f9bf-4780-b9b9-5dc6f876fd5f&frame_skip=2&analysis_interval=40 HTTP/1.1" 200 OK
+2026-06-18 03:28:57,653 [INFO] app.api.v1.stream: video-feed: frame #49 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:58,368 [INFO] app.utils.video_helper: Video akisi sonlandi (toplam 15 frame islendi): https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764071&ei=hzszaoqJLJ3Pi9oPy-aAkA0&ip=176.239.195.116&id=o-AMGEi_pKjekKCmAFTBvWFVF-bo6DLitf53yhie1HzS_g&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=308&met=1781742471%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEXDF_kJ8U2hC5yHYEMoxQrqljlKvsNNDy95Nbm5Ba09yWMNgLBQtKxpXgXX2O1ewFWnTxes4et_&spc=SQ-umjJ0aUHR6JHoLE9RhNg-we-T_6oz0PiwwD9unhMPIlFm1XLC&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=2&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRAIga_mzzbiOvLP_c6IUbjSit5JZa8oAZscYN961ryo97gkCIFthwTsGmI0KIppFGtVZNGlFwB08uoygPI1YZBn-aWUY&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIhAKQgKP_79khDpZnn7w1Z7T22QjdMfYK8uUA8XAYOPhaAAiAcsv_haV9US2JemP8ChFRJdrtoPAPe4UJ7NK50YaquDQ%3D%3D
+2026-06-18 03:28:58,436 [INFO] app.api.v1.stream: video-feed akisi sonlandi: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:28:58,484 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:28:58,738 [INFO] app.api.v1.stream: video-feed: frame #50 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:28:58,862 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764138&ei=yjszasWLE7OWzPsP5e338Aw&ip=176.239.195.116&id=o-ANiTgsV3HUtk18kH7OnDdT6B9ekiEBFUWx6M-Yv30Q9C&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=412&met=1781742538%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1441250&bui=ARmQxEX5b51V1TH6id22-CxI4TL-AJLFZlBt0ARbZkpHoHJ8-4ZLZWNkdllbY6ujhFGlMdhggGWYzJ6z&spc=SQ-umnUqlmu-LlydYplZtWOpeX_JqqTMVXJOVEEi5tS_MLkZhj-Z&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742327&fvip=2&fexp=51565116%2C51565681%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhANZS5EuHCUmCtaD8UdYJSEiqfqV22qUOtSK4Uq9FFUFjAiEAjbGfmZK6FjeWETSiCSDp8NIcRebJm3tScmz56b2QiGw%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAIZ4zuvUg-s5a4aQ9uOcgG0a05K0Rsl_pdxFDubh-PLBAiEA7W7H-zVOeygz3pF-XY3rIiZX8iR4GGkmwC_8Hc0oTS8%3D
+2026-06-18 03:28:58,863 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764138&ei=yjszasWLE7OWzPsP5e338Aw&ip=176.239.195.116&id=o-ANiTgsV3HUtk18kH7OnDdT6B9ekiEBFUWx6M-Yv30Q9C&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=412&met=1781742538%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1441250&bui=ARmQxEX5b51V1TH6id22-CxI4TL-AJLFZlBt0ARbZkpHoHJ8-4ZLZWNkdllbY6ujhFGlMdhggGWYzJ6z&spc=SQ-umnUqlmu-LlydYplZtWOpeX_JqqTMVXJOVEEi5tS_MLkZhj-Z&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742327&fvip=2&fexp=51565116%2C51565681%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhANZS5EuHCUmCtaD8UdYJSEiqfqV22qUOtSK4Uq9FFUFjAiEAjbGfmZK6FjeWETSiCSDp8NIcRebJm3tScmz56b2QiGw%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAIZ4zuvUg-s5a4aQ9uOcgG0a05K0Rsl_pdxFDubh-PLBAiEA7W7H-zVOeygz3pF-XY3rIiZX8iR4GGkmwC_8Hc0oTS8%3D
+2026-06-18 03:29:00,044 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/3f972e21-f9bf-4780-b9b9-5dc6f876fd5f/results HTTP/1.1" 200 OK
+2026-06-18 03:29:00,777 [INFO] app.api.v1.stream: video-feed: frame #51 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:29:01,242 [INFO] app.api.v1.stream: video-feed: frame #40 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:29:02,921 [INFO] app.api.v1.stream: video-feed: frame #80 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/3f972e21-f9bf-4780-b9b9-5dc6f876fd5f/results HTTP/1.1" 200 OK
+2026-06-18 03:29:05,169 [INFO] app.api.v1.stream: video-feed: frame #120 analiz edildi, 8 etiket bulundu.
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/3f972e21-f9bf-4780-b9b9-5dc6f876fd5f/results HTTP/1.1" 200 OK
+2026-06-18 03:29:07,926 [INFO] app.api.v1.stream: video-feed: frame #160 analiz edildi, 8 etiket bulundu.
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/3f972e21-f9bf-4780-b9b9-5dc6f876fd5f/results HTTP/1.1" 200 OK
+2026-06-18 03:29:10,929 [INFO] app.api.v1.stream: video-feed: frame #200 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56900 - "GET /api/v1/analysis/3f972e21-f9bf-4780-b9b9-5dc6f876fd5f/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56892 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Daqz-KE-bpKQ&stream_id=de717700-d923-4338-b211-1c8ea32f319e&frame_skip=0&analysis_interval=40 HTTP/1.1" 422 Unprocessable Content
+2026-06-18 03:29:13,728 [INFO] app.api.v1.stream: video-feed: frame #240 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/de717700-d923-4338-b211-1c8ea32f319e/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56892 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds2PK3KYphEA&stream_id=70d893ac-1e20-4c5b-af47-41b67543ce89&frame_skip=0&analysis_interval=40 HTTP/1.1" 422 Unprocessable Content
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56892 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56892 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds2PK3KYphEA&stream_id=426877ca-b49c-45f7-aa3f-5c16046c36bb&frame_skip=1&analysis_interval=90 HTTP/1.1" 200 OK
+2026-06-18 03:30:44,322 [INFO] app.utils.video_helper: Video akisi sonlandi (toplam 102 frame islendi): https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764085&ei=lTszaoHkBrTN6dsPkMSTkQg&ip=176.239.195.116&id=o-AAjiTFvPmKNFCvJm4N11_GNVDMNth-Q_Ntj3GogAzoJD&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=436&met=1781742485%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47znel&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1470000&bui=ARmQxEUt-j8Ild0FKBdvobAWBabYWbSvzYnRZYp5rqL4d3k5OcT3iQmY70qyisEEVhRZOuhyXVhkk9Y5&spc=SQ-umhxqAgKIC2yM87iV8VAWy6WLpm_1dxL80iWHhkMHKlb_dY87&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742081&fvip=3&fexp=51565115%2C51565682%2C51987686&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRAIgEeR15D6uEkz2ubTSxbWvfUynQIZg3HrxM-n0XHdqcdMCIFfE2IngO3nZt5k8ky91lAfZNRP1zv1ZarO_EFILx1gT&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgHX-MUtzWlA2xD3uz_VetExRwCrKelfWZZYNcHHR5gZICIQDxmpZrajUMTc5OhYGWgmaIDHH4cBWpAXCo5cjncbUzww%3D%3D
+2026-06-18 03:30:44,395 [INFO] app.api.v1.stream: video-feed akisi sonlandi: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+2026-06-18 03:30:44,399 [INFO] app.utils.video_helper: Video akisi sonlandi (toplam 480 frame islendi): https://rr1---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764138&ei=yjszasWLE7OWzPsP5e338Aw&ip=176.239.195.116&id=o-ANiTgsV3HUtk18kH7OnDdT6B9ekiEBFUWx6M-Yv30Q9C&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=412&met=1781742538%2C&mh=aP&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsr&ms=au%2Crdu&mv=m&mvi=1&pl=19&rms=au%2Cau&initcwndbps=1441250&bui=ARmQxEX5b51V1TH6id22-CxI4TL-AJLFZlBt0ARbZkpHoHJ8-4ZLZWNkdllbY6ujhFGlMdhggGWYzJ6z&spc=SQ-umnUqlmu-LlydYplZtWOpeX_JqqTMVXJOVEEi5tS_MLkZhj-Z&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&cnr=14&ratebypass=yes&dur=634.624&lmt=1719195733189356&mt=1781742327&fvip=2&fexp=51565116%2C51565681%2C51987687&c=ANDROID_VR&txp=4538434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhANZS5EuHCUmCtaD8UdYJSEiqfqV22qUOtSK4Uq9FFUFjAiEAjbGfmZK6FjeWETSiCSDp8NIcRebJm3tScmz56b2QiGw%3D&lsparams=cps%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=APaTxxMwRgIhAIZ4zuvUg-s5a4aQ9uOcgG0a05K0Rsl_pdxFDubh-PLBAiEA7W7H-zVOeygz3pF-XY3rIiZX8iR4GGkmwC_8Hc0oTS8%3D
+2026-06-18 03:30:44,475 [INFO] app.api.v1.stream: video-feed akisi sonlandi: https://www.youtube.com/watch?v=aqz-KE-bpKQ
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/70d893ac-1e20-4c5b-af47-41b67543ce89/results HTTP/1.1" 200 OK
+2026-06-18 03:30:45,785 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=s2PK3KYphEA
+2026-06-18 03:30:46,140 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr7---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764245&ei=NTwzaruWJNO3svQP86jV8AY&ip=176.239.195.116&id=o-AJKjnm6nrhfB8YbigbW2WVjredYykq4Zshjvhp4MONaP&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1407&hcs=ir%2C&met=1781742645%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsk&ms=au%2Crdu&mv=m&mvi=7&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1441250&bui=ARmQxEWOyQsEAaXZS-pn1cH5sbfKkB3gGgfsr4GejTs-D75NqXEL7di9YpRDUGPYcsZbA1wgv_qUfggp&spc=SQ-umtRtmZmcK-yuV0FEWrwgo3Re85fgnYsLnQy8OyymiLeHSpE8&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742327&fvip=1&fexp=51565116%2C51565682%2C51987687%2C51992899&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIgbbMT7k8xzM42OxpiOjUvXaswradY-NJpjT9Y_rRNYqoCIQDKASrsQmiKEn_xiayu2rW84kcHa8m1QfH1PrC1-0wZVw%3D%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgY3NO1la8zsFKKVfYF2yxjJe0vgosErRP05jhO4sknyACIQCs-lvmlhgFnNQUpWhWx--r8X4-sPfw7SI5la4gEAF6ig%3D%3D
+2026-06-18 03:30:46,140 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr7---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764245&ei=NTwzaruWJNO3svQP86jV8AY&ip=176.239.195.116&id=o-AJKjnm6nrhfB8YbigbW2WVjredYykq4Zshjvhp4MONaP&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1407&hcs=ir%2C&met=1781742645%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsk&ms=au%2Crdu&mv=m&mvi=7&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1441250&bui=ARmQxEWOyQsEAaXZS-pn1cH5sbfKkB3gGgfsr4GejTs-D75NqXEL7di9YpRDUGPYcsZbA1wgv_qUfggp&spc=SQ-umtRtmZmcK-yuV0FEWrwgo3Re85fgnYsLnQy8OyymiLeHSpE8&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742327&fvip=1&fexp=51565116%2C51565682%2C51987687%2C51992899&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIgbbMT7k8xzM42OxpiOjUvXaswradY-NJpjT9Y_rRNYqoCIQDKASrsQmiKEn_xiayu2rW84kcHa8m1QfH1PrC1-0wZVw%3D%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgY3NO1la8zsFKKVfYF2yxjJe0vgosErRP05jhO4sknyACIQCs-lvmlhgFnNQUpWhWx--r8X4-sPfw7SI5la4gEAF6ig%3D%3D
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:30:48,484 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 4 etiket bulundu.
+2026-06-18 03:30:49,720 [INFO] app.api.v1.stream: video-feed: frame #90 analiz edildi, 1 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:30:51,036 [INFO] app.api.v1.stream: video-feed: frame #180 analiz edildi, 2 etiket bulundu.
+2026-06-18 03:30:52,532 [INFO] app.api.v1.stream: video-feed: frame #270 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:30:55,310 [INFO] app.api.v1.stream: video-feed: frame #360 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:30:57,788 [INFO] app.api.v1.stream: video-feed: frame #450 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:00,244 [INFO] app.api.v1.stream: video-feed: frame #540 analiz edildi, 10 etiket bulundu.
+2026-06-18 03:31:02,749 [INFO] app.api.v1.stream: video-feed: frame #630 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:04,392 [INFO] app.api.v1.stream: video-feed: frame #720 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:06,512 [INFO] app.api.v1.stream: video-feed: frame #810 analiz edildi, 8 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:09,494 [INFO] app.api.v1.stream: video-feed: frame #900 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:12,298 [INFO] app.api.v1.stream: video-feed: frame #990 analiz edildi, 7 etiket bulundu.
+2026-06-18 03:31:14,312 [INFO] app.api.v1.stream: video-feed: frame #1080 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:16,587 [INFO] app.api.v1.stream: video-feed: frame #1170 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:19,155 [INFO] app.api.v1.stream: video-feed: frame #1260 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:22,387 [INFO] app.api.v1.stream: video-feed: frame #1350 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:25,726 [INFO] app.api.v1.stream: video-feed: frame #1440 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:27,990 [INFO] app.api.v1.stream: video-feed: frame #1530 analiz edildi, 8 etiket bulundu.
+2026-06-18 03:31:30,210 [INFO] app.api.v1.stream: video-feed: frame #1620 analiz edildi, 8 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:32,150 [INFO] app.api.v1.stream: video-feed: frame #1710 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:33,830 [INFO] app.api.v1.stream: video-feed: frame #1800 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56929 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56944 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds2PK3KYphEA&stream_id=da23c0e1-7560-46a3-ac94-3cf26a4bce54&frame_skip=2&analysis_interval=90 HTTP/1.1" 200 OK
+2026-06-18 03:31:35,620 [INFO] app.api.v1.stream: video-feed: frame #1890 analiz edildi, 6 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/426877ca-b49c-45f7-aa3f-5c16046c36bb/results HTTP/1.1" 200 OK
+2026-06-18 03:31:37,084 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=s2PK3KYphEA
+2026-06-18 03:31:37,404 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr6---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764296&ei=aDwzav6OOceH6dsPhKnQsQU&ip=176.239.195.116&id=o-AACFPDk73bH8GbIQ1tYU5RHxtgFu6ZjkI7JxlPUG1Vo_&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1387&hcs=ir%2C&met=1781742696%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsk&ms=au%2Crdu&mv=m&mvi=6&pcm2cms=yes&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1441250&bui=ARmQxEU2_BHv36c5fynQQu9PVPi4Hu7Cu4swncKGNmvU7bNzNSTylb-QMxtbvFtbOMFdXgi8AMK0CY08&spc=SQ-umlynDm_7IBPOuzO2UfwyCS8lGCEDh60BeADCKf17w0jVWlvu&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742327&fvip=1&fexp=51565115%2C51565681%2C51987687&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhALhSiiq6WcNZAizXozmgcFEVOvBXaaG519SNL6XJIZzaAiAB7nm4maUvfqGqCzkeSRbVgL8tvaU8uUIwsGD3YeYSLg%3D%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgecgH3MsQFntQiGHtAmhiQ5pIjaF_PWHxPq5Otpz5PkQCIAV4doe2Z2HfWaqOfwKSv1UCMTATp2ZuEANvIL_8jj9G
+2026-06-18 03:31:37,404 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr6---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764296&ei=aDwzav6OOceH6dsPhKnQsQU&ip=176.239.195.116&id=o-AACFPDk73bH8GbIQ1tYU5RHxtgFu6ZjkI7JxlPUG1Vo_&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1387&hcs=ir%2C&met=1781742696%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsk&ms=au%2Crdu&mv=m&mvi=6&pcm2cms=yes&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1441250&bui=ARmQxEU2_BHv36c5fynQQu9PVPi4Hu7Cu4swncKGNmvU7bNzNSTylb-QMxtbvFtbOMFdXgi8AMK0CY08&spc=SQ-umlynDm_7IBPOuzO2UfwyCS8lGCEDh60BeADCKf17w0jVWlvu&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742327&fvip=1&fexp=51565115%2C51565681%2C51987687&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhALhSiiq6WcNZAizXozmgcFEVOvBXaaG519SNL6XJIZzaAiAB7nm4maUvfqGqCzkeSRbVgL8tvaU8uUIwsGD3YeYSLg%3D%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRAIgecgH3MsQFntQiGHtAmhiQ5pIjaF_PWHxPq5Otpz5PkQCIAV4doe2Z2HfWaqOfwKSv1UCMTATp2ZuEANvIL_8jj9G
+2026-06-18 03:31:37,638 [INFO] app.api.v1.stream: video-feed: frame #1980 analiz edildi, 7 etiket bulundu.
+2026-06-18 03:31:38,874 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:31:39,475 [INFO] app.api.v1.stream: video-feed: frame #2070 analiz edildi, 4 etiket bulundu.
+2026-06-18 03:31:40,319 [INFO] app.api.v1.stream: video-feed: frame #90 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:31:42,718 [INFO] app.api.v1.stream: video-feed: frame #180 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:31:45,187 [INFO] app.api.v1.stream: video-feed: frame #270 analiz edildi, 10 etiket bulundu.
+2026-06-18 03:31:46,955 [INFO] app.api.v1.stream: video-feed: frame #360 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:31:49,291 [INFO] app.api.v1.stream: video-feed: frame #450 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:31:51,395 [INFO] app.api.v1.stream: video-feed: frame #540 analiz edildi, 5 etiket bulundu.
+2026-06-18 03:31:53,968 [INFO] app.api.v1.stream: video-feed: frame #630 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:31:57,732 [INFO] app.api.v1.stream: video-feed: frame #720 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:32:00,144 [INFO] app.api.v1.stream: video-feed: frame #810 analiz edildi, 8 etiket bulundu.
+2026-06-18 03:32:02,242 [INFO] app.api.v1.stream: video-feed: frame #900 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:32:04,513 [INFO] app.api.v1.stream: video-feed: frame #990 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:32:06,902 [INFO] app.api.v1.stream: video-feed: frame #1080 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56929 - "GET /api/v1/analysis/da23c0e1-7560-46a3-ac94-3cf26a4bce54/results HTTP/1.1" 200 OK
+2026-06-18 03:32:09,129 [INFO] app.api.v1.stream: video-feed: frame #1170 analiz edildi, 6 etiket bulundu.
+INFO:     127.0.0.1:56929 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:56929 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds2PK3KYphEA&stream_id=ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c&frame_skip=1&analysis_interval=60 HTTP/1.1" 200 OK
+2026-06-18 03:32:11,778 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=s2PK3KYphEA
+2026-06-18 03:32:12,016 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr2---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764331&ei=izwzatinJbOXzPsPyKLyuAo&ip=176.239.195.116&id=o-APkvBRo4Ehg6zr6VlGRp52bZ4xalTrCpfMDp5BF6p2oK&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1039&hcs=ir%2C&met=1781742731%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsk&ms=au%2Crdu&mv=m&mvi=2&pcm2cms=yes&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1441250&bui=ARmQxEV5hN8llwr3i2ou2lBmjQcfrF84WQnvIxChtShXTUWzFr_6Fl4_p_7INipECVnrwjBVmdoz9EVq&spc=SQ-umn149djv3Y247qVlGV1PirCH9-VxlZnxebAWaSsdA2wBkm6V&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742327&fvip=1&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhAJytlerS0_cRh3RT0gmakDAK9oSRxxrO5VUEHwiJ34MyAiEA26LbRONlr3FuoLpM-St3IaG0HaqrwB5NVhNTsM3EWJ0%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgT_Ld7DhrRO9dP7OIKrbhGxVDjUuPMVGi-QpxSmWOtH0CIQCbTkmKA16ScVuvGcCX7HlCzUJkfi-baULYu83zKl_N5A%3D%3D
+2026-06-18 03:32:12,016 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr2---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764331&ei=izwzatinJbOXzPsPyKLyuAo&ip=176.239.195.116&id=o-APkvBRo4Ehg6zr6VlGRp52bZ4xalTrCpfMDp5BF6p2oK&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1039&hcs=ir%2C&met=1781742731%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47lnsk&ms=au%2Crdu&mv=m&mvi=2&pcm2cms=yes&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1441250&bui=ARmQxEV5hN8llwr3i2ou2lBmjQcfrF84WQnvIxChtShXTUWzFr_6Fl4_p_7INipECVnrwjBVmdoz9EVq&spc=SQ-umn149djv3Y247qVlGV1PirCH9-VxlZnxebAWaSsdA2wBkm6V&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742327&fvip=1&fexp=51565116%2C51565681%2C51987686&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRgIhAJytlerS0_cRh3RT0gmakDAK9oSRxxrO5VUEHwiJ34MyAiEA26LbRONlr3FuoLpM-St3IaG0HaqrwB5NVhNTsM3EWJ0%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgT_Ld7DhrRO9dP7OIKrbhGxVDjUuPMVGi-QpxSmWOtH0CIQCbTkmKA16ScVuvGcCX7HlCzUJkfi-baULYu83zKl_N5A%3D%3D
+2026-06-18 03:32:13,612 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:15,558 [INFO] app.api.v1.stream: video-feed: frame #60 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:16,902 [INFO] app.api.v1.stream: video-feed: frame #120 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:32:18,262 [INFO] app.api.v1.stream: video-feed: frame #180 analiz edildi, 2 etiket bulundu.
+2026-06-18 03:32:19,674 [INFO] app.api.v1.stream: video-feed: frame #240 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:21,278 [INFO] app.api.v1.stream: video-feed: frame #300 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:24,025 [INFO] app.api.v1.stream: video-feed: frame #360 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:26,242 [INFO] app.api.v1.stream: video-feed: frame #420 analiz edildi, 3 etiket bulundu.
+2026-06-18 03:32:28,570 [INFO] app.api.v1.stream: video-feed: frame #480 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:31,506 [INFO] app.api.v1.stream: video-feed: frame #540 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:34,116 [INFO] app.api.v1.stream: video-feed: frame #600 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:36,883 [INFO] app.api.v1.stream: video-feed: frame #660 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:39,306 [INFO] app.api.v1.stream: video-feed: frame #720 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:41,282 [INFO] app.api.v1.stream: video-feed: frame #780 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:43,886 [INFO] app.api.v1.stream: video-feed: frame #840 analiz edildi, 10 etiket bulundu.
+2026-06-18 03:32:46,702 [INFO] app.api.v1.stream: video-feed: frame #900 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:49,458 [INFO] app.api.v1.stream: video-feed: frame #960 analiz edildi, 7 etiket bulundu.
+INFO:     127.0.0.1:56945 - "GET /api/v1/analysis/ed696cdf-126c-4bc9-b0e0-7fad5b10fe9c/results HTTP/1.1" 200 OK
+2026-06-18 03:32:51,879 [INFO] app.api.v1.stream: video-feed: frame #1020 analiz edildi, 6 etiket bulundu.
+INFO:     127.0.0.1:57647 - "POST /api/v1/streams HTTP/1.1" 201 Created
+INFO:     127.0.0.1:57647 - "GET /api/v1/video-feed?video_url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds2PK3KYphEA&stream_id=28cb1de8-3383-4985-97fa-5f77d6e0a6d2&frame_skip=1&analysis_interval=60 HTTP/1.1" 200 OK
+2026-06-18 03:34:51,386 [INFO] app.utils.video_helper: YouTube linki cozuldu: https://www.youtube.com/watch?v=s2PK3KYphEA
+2026-06-18 03:34:51,632 [INFO] app.utils.video_helper: Video kaynagi acildi: https://rr2---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764491&ei=Kz0zaoX9CraC6dsP3t6eKA&ip=176.239.195.116&id=o-AIJB3zVUQXx3L7X5_jK27KhS5K7-k3Ngc-zDl9IttCcY&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1305&hcs=ir%2C&met=1781742891%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47znel&ms=au%2Crdu&mv=m&mvi=2&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1471250&bui=ARmQxEXwgsaO7MC6pV1CNSPdI4-37aduhJn5ei3Ct1Hhzln-y3Kt4DP1OeBb5OYh8PDE5KTuhbqAQueP&spc=SQ-ums6Kn1ThI1yzGmug-NEx_IuYxfN6hDoCQFuj-mfpZoFqFh_4&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742583&fvip=2&fexp=51565116%2C51565682%2C51987686&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAN0ez4t9CQd9ygM0eOelmo-0aryu7i8WV9NmsRc3t8fbAiBM-_QFPpEcC4IpY-5VPKtK4sDFFiu5D6yIKlzbSWAlSg%3D%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgPW6npaYuLGYXLY4W_-rBsK2uV3x_F4CEJGs0l2WTfcwCIQDcob-Jw6tx7AlbjkUP3aIYhcY4tHdfIV9Zkn9x_UJSIg%3D%3D
+2026-06-18 03:34:51,632 [INFO] app.utils.video_helper: Video akisi baslatildi: https://rr2---sn-u0g3jxaa-xncz.googlevideo.com/videoplayback?expire=1781764491&ei=Kz0zaoX9CraC6dsP3t6eKA&ip=176.239.195.116&id=o-AIJB3zVUQXx3L7X5_jK27KhS5K7-k3Ngc-zDl9IttCcY&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&cps=1305&hcs=ir%2C&met=1781742891%2C&mh=J6&mm=31%2C29&mn=sn-u0g3jxaa-xncz%2Csn-nv47znel&ms=au%2Crdu&mv=m&mvi=2&pl=19&rmhost=rr5---sn-u0g3jxaa-xncz.googlevideo.com%2C&rms=au%2Cau&gcr=tr&initcwndbps=1471250&bui=ARmQxEXwgsaO7MC6pV1CNSPdI4-37aduhJn5ei3Ct1Hhzln-y3Kt4DP1OeBb5OYh8PDE5KTuhbqAQueP&spc=SQ-ums6Kn1ThI1yzGmug-NEx_IuYxfN6hDoCQFuj-mfpZoFqFh_4&vprv=1&svpuc=1&mime=video%2Fmp4&rqh=1&gir=yes&clen=46299357&ratebypass=yes&dur=523.935&lmt=1781739078556957&mt=1781742583&fvip=2&fexp=51565116%2C51565682%2C51987686&c=ANDROID_VR&txp=4438534&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cgcr%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AHEqNM4wRQIhAN0ez4t9CQd9ygM0eOelmo-0aryu7i8WV9NmsRc3t8fbAiBM-_QFPpEcC4IpY-5VPKtK4sDFFiu5D6yIKlzbSWAlSg%3D%3D&lsparams=cps%2Chcs%2Cmet%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crmhost%2Crms%2Cinitcwndbps&lsig=APaTxxMwRQIgPW6npaYuLGYXLY4W_-rBsK2uV3x_F4CEJGs0l2WTfcwCIQDcob-Jw6tx7AlbjkUP3aIYhcY4tHdfIV9Zkn9x_UJSIg%3D%3D
+2026-06-18 03:34:54,017 [INFO] app.api.v1.stream: video-feed: frame #0 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:34:55,937 [INFO] app.api.v1.stream: video-feed: frame #60 analiz edildi, 5 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:34:57,160 [INFO] app.api.v1.stream: video-feed: frame #120 analiz edildi, 1 etiket bulundu.
+2026-06-18 03:34:58,542 [INFO] app.api.v1.stream: video-feed: frame #180 analiz edildi, 2 etiket bulundu.
+2026-06-18 03:35:00,034 [INFO] app.api.v1.stream: video-feed: frame #240 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:35:01,697 [INFO] app.api.v1.stream: video-feed: frame #300 analiz edildi, 2 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:35:03,881 [INFO] app.api.v1.stream: video-feed: frame #360 analiz edildi, 7 etiket bulundu.
+2026-06-18 03:35:05,658 [INFO] app.api.v1.stream: video-feed: frame #420 analiz edildi, 3 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:35:07,281 [INFO] app.api.v1.stream: video-feed: frame #480 analiz edildi, 4 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:35:09,619 [INFO] app.api.v1.stream: video-feed: frame #540 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:35:12,331 [INFO] app.api.v1.stream: video-feed: frame #600 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:35:15,303 [INFO] app.api.v1.stream: video-feed: frame #660 analiz edildi, 10 etiket bulundu.
+INFO:     127.0.0.1:57649 - "GET /api/v1/analysis/28cb1de8-3383-4985-97fa-5f77d6e0a6d2/results HTTP/1.1" 200 OK
+2026-06-18 03:35:17,697 [INFO] app.api.v1.stream: video-feed: frame #720 analiz edildi, 2 etiket bulundu.

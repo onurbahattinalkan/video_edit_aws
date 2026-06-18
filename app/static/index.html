@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AWS Video Analiz Paneli</title>
+<style>
+  :root {
+    --bg-1: #0f172a;
+    --bg-2: #1e293b;
+    --accent: #6366f1;
+    --accent-2: #22d3ee;
+    --card: #ffffff;
+    --text-dim: #64748b;
+    --danger: #ef4444;
+    --success: #10b981;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, var(--bg-1), var(--bg-2));
+    min-height: 100vh;
+    color: #1a1a2e;
+  }
+  header {
+    padding: 2rem 1.5rem 1rem;
+    text-align: center;
+  }
+  header h1 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 0 0.25rem;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    color: #cbd5e1;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  .search-card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .search-card input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+    padding: 0.7rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .search-card input[type="text"]:focus { border-color: var(--accent); }
+  button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.15s;
+  }
+  button:active { transform: scale(0.97); }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { opacity: 0.9; }
+  .btn-stop { background: #fee2e2; color: var(--danger); }
+  .btn-stop:hover { opacity: 0.85; }
+  details.advanced { margin-top: 0.75rem; width: 100%; color: var(--text-dim); font-size: 0.85rem; }
+  details.advanced .opts { display: flex; gap: 1rem; margin-top: 0.5rem; }
+  details.advanced label { display: block; margin-bottom: 0.2rem; }
+  details.advanced input { width: 90px; padding: 0.35rem; border-radius: 6px; border: 1px solid #e2e8f0; }
+
+  .panels {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .video-panel {
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 420px;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .video-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+  }
+  .video-panel .placeholder {
+    color: #475569;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .live-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--danger);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    display: none;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .live-badge .dot {
+    width: 6px; height: 6px; border-radius: 50%; background: #fff;
+    animation: pulse 1.2s infinite;
+  }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+  .results-panel {
+    flex: 1;
+    min-width: 280px;
+    background: var(--card);
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    max-height: 420px;
+    overflow-y: auto;
+  }
+  .results-panel h2 {
+    font-size: 1rem;
+    margin: 0 0 0.75rem;
+    color: #1a1a2e;
+  }
+  .label-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.55rem 0.2rem;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.9rem;
+  }
+  .label-item:last-child { border-bottom: none; }
+  .label-name { font-weight: 600; }
+  .confidence-badge {
+    background: #eef2ff;
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+  }
+  .empty-state { color: var(--text-dim); font-size: 0.85rem; text-align: center; padding: 2rem 0; }
+  .status-line {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+    text-align: center;
+    min-height: 1.2em;
+  }
+  .status-line.error { color: #fca5a5; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>AWS Video Akisi &amp; Nesne Tanima Paneli</h1>
+    <p>Bir video linki (YouTube, mp4, RTSP/HLS) yapistir, anlik nesne tanima sonuclarini izle.</p>
+  </header>
+
+  <div class="container">
+    <div class="search-card">
+      <input id="video-url" type="text" placeholder="https://www.youtube.com/watch?v=... veya https://.../video.mp4" />
+      <button class="btn-primary" id="analyze-btn">Analiz Et</button>
+      <button class="btn-stop" id="stop-btn">Durdur</button>
+
+      <details class="advanced">
+        <summary>Gelismis ayarlar</summary>
+        <div class="opts">
+          <div>
+            <label for="frame-skip">Frame Skip</label>
+            <input id="frame-skip" type="number" value="2" min="1" />
+          </div>
+          <div>
+            <label for="analysis-interval">Analiz Araligi</label>
+            <input id="analysis-interval" type="number" value="15" min="1" />
+          </div>
+        </div>
+      </details>
+    </div>
+
+    <div class="panels">
+      <div class="video-panel">
+        <div class="live-badge" id="live-badge"><span class="dot"></span>CANLI</div>
+        <img id="video-feed" alt="Canli video akisi" />
+        <div class="placeholder" id="video-placeholder">Bir video linki girip "Analiz Et" butonuna basin</div>
+      </div>
+
+      <div class="results-panel">
+        <h2>Tespit Edilen Nesneler</h2>
+        <div id="results-list"><div class="empty-state">Henuz analiz baslatilmadi</div></div>
+      </div>
+    </div>
+
+    <div class="status-line" id="status-line"></div>
+  </div>
+
+<script>
+  const els = {
+    url: document.getElementById("video-url"),
+    analyzeBtn: document.getElementById("analyze-btn"),
+    stopBtn: document.getElementById("stop-btn"),
+    frameSkip: document.getElementById("frame-skip"),
+    analysisInterval: document.getElementById("analysis-interval"),
+    video: document.getElementById("video-feed"),
+    placeholder: document.getElementById("video-placeholder"),
+    liveBadge: document.getElementById("live-badge"),
+    resultsList: document.getElementById("results-list"),
+    statusLine: document.getElementById("status-line"),
+  };
+
+  let pollTimer = null;
+  let currentStreamId = null;
+
+  function setStatus(text, isError = false) {
+    els.statusLine.textContent = text;
+    els.statusLine.classList.toggle("error", isError);
+  }
+
+  function stopEverything() {
+    els.video.src = "";
+    els.video.style.display = "none";
+    els.placeholder.style.display = "block";
+    els.liveBadge.style.display = "none";
+    if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
+    setStatus("Durduruldu.");
+  }
+
+  async function pollResults(streamId) {
+    try {
+      const response = await fetch(`/api/v1/analysis/${streamId}/results`);
+      if (!response.ok) return;
+      const data = await response.json();
+      renderResults(data);
+    } catch (_) {
+      // sessizce yut, bir sonraki pollde tekrar dener
+    }
+  }
+
+  function renderResults(items) {
+    if (!items.length) {
+      els.resultsList.innerHTML = '<div class="empty-state">Henuz nesne tespit edilmedi...</div>';
+      return;
+    }
+    const latestByLabel = new Map();
+    for (const item of items) {
+      const existing = latestByLabel.get(item.label);
+      if (!existing || new Date(item.created_at) > new Date(existing.created_at)) {
+        latestByLabel.set(item.label, item);
+      }
+    }
+    const sorted = [...latestByLabel.values()].sort((a, b) => b.confidence - a.confidence);
+    els.resultsList.innerHTML = sorted
+      .map(
+        (r) => `<div class="label-item">
+          <span class="label-name">${r.label}</span>
+          <span class="confidence-badge">%${r.confidence.toFixed(1)}</span>
+        </div>`
+      )
+      .join("");
+  }
+
+  async function startAnalysis() {
+    const videoUrl = els.url.value.trim();
+    if (!videoUrl) { setStatus("Lutfen bir video linki girin.", true); return; }
+
+    setStatus("Stream olusturuluyor...");
+    els.resultsList.innerHTML = '<div class="empty-state">Yukleniyor...</div>';
+
+    try {
+      const createResponse = await fetch("/api/v1/streams", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: `web-ui-${Date.now()}` }),
+      });
+      const stream = await createResponse.json();
+      if (!createResponse.ok) throw new Error(stream.detail || JSON.stringify(stream));
+
+      currentStreamId = stream.id;
+      const frameSkip = els.frameSkip.value || 2;
+      const analysisInterval = els.analysisInterval.value || 15;
+      const params = new URLSearchParams({
+        video_url: videoUrl,
+        stream_id: currentStreamId,
+        frame_skip: frameSkip,
+        analysis_interval: analysisInterval,
+      });
+
+      els.video.src = `/api/v1/video-feed?${params.toString()}`;
+      els.video.style.display = "block";
+      els.placeholder.style.display = "none";
+      els.liveBadge.style.display = "flex";
+      setStatus(`Canli analiz basladi (stream: ${currentStreamId})`);
+
+      if (pollTimer) clearInterval(pollTimer);
+      pollTimer = setInterval(() => pollResults(currentStreamId), 3000);
+    } catch (err) {
+      setStatus(`Hata: ${err.message}`, true);
+    }
+  }
+
+  els.analyzeBtn.addEventListener("click", startAnalysis);
+  els.stopBtn.addEventListener("click", stopEverything);
+  els.url.addEventListener("keydown", (e) => { if (e.key === "Enter") startAnalysis(); });
+  els.video.addEventListener("error", () => setStatus("Video akisi acilamadi. Linki kontrol edin.", true));
+</script>
+</body>
+</html>
